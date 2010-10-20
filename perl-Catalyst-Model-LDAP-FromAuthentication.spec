@@ -24,6 +24,7 @@ BuildRequires: perl(MooseX::Types::Common::String)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(namespace::autoclean)
 BuildRequires: perl(Module::Install)
+BuildRequires: perl(Module::CoreList)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
