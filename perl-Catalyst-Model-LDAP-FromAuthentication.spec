@@ -1,5 +1,5 @@
 %define upstream_name    Catalyst-Model-LDAP-FromAuthentication
-%define upstream_version 0.01
+%define upstream_version 0.02
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -20,7 +20,7 @@ BuildRequires: perl(Catalyst::Runtime)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Moose)
 BuildRequires: perl(MooseX::Types::Common::String)
-#BuildRequires: perl(MooseX::Types::LoadableClass)
+BuildRequires: perl(MooseX::Types::LoadableClass)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(namespace::autoclean)
 BuildRequires: perl(Module::Install)
