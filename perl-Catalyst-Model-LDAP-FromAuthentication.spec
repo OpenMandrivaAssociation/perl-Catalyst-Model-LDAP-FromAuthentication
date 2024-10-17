@@ -8,7 +8,7 @@ Release:	5
 Summary:	Provides an LDAP model bound as the user who logged in
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 # Get 0.01, which is not on CPAN, at:
 # http://github.com/bobtfish/catalyst-model-ldap-fromauthentication/tarball/0.01
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
