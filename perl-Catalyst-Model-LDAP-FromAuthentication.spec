@@ -13,6 +13,7 @@ Url:		https://search.cpan.org/dist/%{upstream_name}
 # http://github.com/bobtfish/catalyst-model-ldap-fromauthentication/tarball/0.01
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Catalyst::Authentication::Store::LDAP)
 BuildRequires:	perl(Catalyst::Component::InstancePerContext)
