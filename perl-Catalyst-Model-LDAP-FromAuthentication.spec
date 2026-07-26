@@ -1,17 +1,15 @@
 %define upstream_name    Catalyst-Model-LDAP-FromAuthentication
-%define upstream_version 0.02
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	0.02
+Release:	6
 
 Summary:	Provides an LDAP model bound as the user who logged in
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
+Url:		https://metacpan.org/dist/%{upstream_name}
 # Get 0.01, which is not on CPAN, at:
 # http://github.com/bobtfish/catalyst-model-ldap-fromauthentication/tarball/0.01
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -33,7 +31,7 @@ BuildArch:	noarch
 Provides an LDAP model bound as the user who logged in.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 perl -pi -e 's/^(use Module::Install::Author)/#$1/g;s/^(author_)/#$1/g' Makefile.PL
 
 %build
